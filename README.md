@@ -61,3 +61,23 @@ O circuito deve ser montado seguindo as conexões elétricas detalhadas abaixo:
 | 🟡 **LED Amarelo (Alerta)** | Anodo (+)<br> Catodo (-) | **Pino 9** <br> **GND** | Digital (Saída) <br> Alimentação | Em série com Resistor 220 Ω <br> Ligado direto ao GND |
 | 🔴 **LED Vermelho (Crítico)** | Anodo (+)<br> Catodo (-) | **Pino 10** <br> **GND** | Digital (Saída) <br> Alimentação | Em série com Resistor 220 Ω <br> Ligado direto ao GND |
 | 🔊 **Buzzer** | Terminal 1 <br> Terminal 2 | **Pino 7** <br> **GND** | Digital (Saída) <br> Alimentação | Alarme sonoro do sistema |
+
+## Instruções de Execução
+
+* 🔗 **Link Wokwi:** [Clique aqui para acessar](https://wokwi.com/projects/466193340014837761)
+
+### No Hardware Físico
+
+Certifique-se de ter a Arduino IDE instalada em sua máquina. <br>
+
+Instale as bibliotecas necessárias através do Gerenciador de Bibliotecas da IDE: <br>
+
+DHT sensor library (por Adafruit) <br>
+
+LiquidCrystal I2C (por Frank de Brabander) <br>
+
+Monte o circuito físico em uma protoboard seguindo o guia da Estrutura do Circuito. <br>
+
+Conecte o Arduino Uno ao computador via cabo USB, selecione a porta COM correspondente e clique em Carregar (Upload). <br>
+
+Abra o Serial Monitor (ajustado para 9600 bps) para acompanhar os relatórios de erros, caso existam. <br>
