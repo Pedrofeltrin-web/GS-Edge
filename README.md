@@ -20,10 +20,5 @@ O LiveOnSpace é um sistema desenvolvido na plataforma Arduino para o monitorame
 Garantir a segurança de riscos climáticos que afetem o ambiente, mitigando riscos causados pelo calor excessivo ou baixa umidade. A solução automatiza a leitura de riscos em três níveis operacionais (OK, Alerta e Crítico), permitindo tomadas de decisão rápidas antes que falhas estruturais ou de hardware aconteçam.
 
 ## Componentes Utilizados
-O hardware é composto por:
-1x Microcontrolador: Arduino UNO
-1x Sensor de Temperatura e Umidade: DHT22 (Pino Digital 6)
-1x Display LCD 16x2 com Módulo I2C: Para exibição de dados (Pinos A4/SDA e A5/SCL)
-3x LEDs Indicadores (5mm):Verde: Indicador de ambiente seguro (Pino Digital 8)Amarelo: Indicador de estado de atenção (Pino Digital 9)Vermelho: Indicador de perigo iminente (Pino Digital 10)
-1x Buzzer Piezoelétrico: Para alertas sonoros (Pino Digital 7)
-3x Resistores de 220 $\Omega$: Para proteção e limitação de corrente dos LEDs1x Protoboard (Breadboard) e Jumpers de conexão
+| Ícone | Componente | Quantidade| Função Principal no Circuito| 
+|🧠Arduino UNO R31 un.Microcontrolador central; processa a lógica dos sensores e controla as saídas.🌡️Sensor DHT221 un.Sensor digital de alta precisão para medição de Temperatura e Umidade relativa.📺Display LCD 16x2 (I2C)1 un.Interface visual para exibição em tempo real dos dados climáticos e status.🚨Buzzer Piezoelétrico1 un.Alarme sonoro intermitente ativado apenas em condições de risco crítico.🔴LED Difuso Vermelho1 un.Indicador visual para o Nível 3: Risco Crítico no ambiente.🟡LED Difuso Amarelo1 un.Indicador visual para o Nível 2: Estado de Alerta.🟢LED Difuso Verde1 un.Indicador visual para o Nível 1: Ambiente Seguro (OK).⚡Resistores de 220 $\Omega$3 un.Limitadores de corrente para proteção dos LEDs (Verde, Amarelo e Vermelho).🔌Protoboard & Jumpers1 kitBase de ensaios e cabos de conexão para a interligação dos componentes. |
