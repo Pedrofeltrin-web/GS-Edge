@@ -72,9 +72,7 @@ Certifique-se de ter a Arduino IDE instalada em sua máquina. <br>
 
 Instale as bibliotecas necessárias através do Gerenciador de Bibliotecas da IDE: <br>
 
-DHT sensor library (por Adafruit) <br>
-
-LiquidCrystal I2C (por Frank de Brabander) <br>
+DHT sensor library (por Adafruit) | LiquidCrystal I2C (por Frank de Brabander) <br>
 
 Monte o circuito físico em uma protoboard seguindo o guia da Estrutura do Circuito. <br>
 
