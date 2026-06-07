@@ -21,4 +21,13 @@ Garantir a segurança de riscos climáticos que afetem o ambiente, mitigando ris
 
 ## Componentes Utilizados
 | Ícone | Componente | Quantidade| Função Principal no Circuito| 
-|🧠Arduino UNO R31 un.Microcontrolador central; processa a lógica dos sensores e controla as saídas.🌡️Sensor DHT221 un.Sensor digital de alta precisão para medição de Temperatura e Umidade relativa.📺Display LCD 16x2 (I2C)1 un.Interface visual para exibição em tempo real dos dados climáticos e status.🚨Buzzer Piezoelétrico1 un.Alarme sonoro intermitente ativado apenas em condições de risco crítico.🔴LED Difuso Vermelho1 un.Indicador visual para o Nível 3: Risco Crítico no ambiente.🟡LED Difuso Amarelo1 un.Indicador visual para o Nível 2: Estado de Alerta.🟢LED Difuso Verde1 un.Indicador visual para o Nível 1: Ambiente Seguro (OK).⚡Resistores de 220 $\Omega$3 un.Limitadores de corrente para proteção dos LEDs (Verde, Amarelo e Vermelho).🔌Protoboard & Jumpers1 kitBase de ensaios e cabos de conexão para a interligação dos componentes. |
+| :--- | :---: | :---: | :--- |
+| 🧠 | Arduino UNO R3 | 1 un. | Microcontrolador central; processa a lógica dos sensores e controla as saídas. |
+| 🌡️ | Sensor DHT22 | 1 un. | Sensor digital de alta precisão para medição de Temperatura e Umidade relativa. | 
+| 📺 | Display LCD 16x2 (I2C) | 1 un. | Interface visual para exibição em tempo real dos dados climáticos e status. | 
+| 🚨 | Buzzer Piezoelétrico | 1 un. | Alarme sonoro intermitente ativado apenas em condições de risco crítico. | 
+| 🔴 | LED Difuso Vermelho | 1 un. | Indicador visual para o Nível 3: Risco Crítico no ambiente. | 
+| 🟡 | LED Difuso Amarelo | 1 un.| Indicador visual para o Nível 2: Estado de Alerta. |
+| 🟢 | LED Difuso Verde| 1 un. | Indicador visual para o Nível 1: Ambiente Seguro (OK). |
+| ⚡ | Resistores de 220 $\Omega$ | 3 un. | Limitadores de corrente para proteção dos LEDs (Verde, Amarelo e Vermelho). |
+| 🔌 | Protoboard & Jumpers | 1 kit | Base de ensaios e cabos de conexão para a interligação dos componentes. |
