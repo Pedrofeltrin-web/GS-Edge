@@ -31,3 +31,22 @@ Garantir a segurança de riscos climáticos que afetem o ambiente, mitigando ris
 | 🟢 | LED Difuso Verde| 1 un. | Indicador visual para o Nível 1: Ambiente Seguro (OK). |
 | ⚡ | Resistores de 220 $\Omega$ | 3 un. | Limitadores de corrente para proteção dos LEDs (Verde, Amarelo e Vermelho). |
 | 🔌 | Protoboard & Jumpers | 1 kit | Base de ensaios e cabos de conexão para a interligação dos componentes. |
+
+## Explicação do Funcionamento
+O firmware executa um loop contínuo de varredura a cada 3 segundos, dividindo-se nas seguintes etapas estruturadas:
+
+### 1. Leitura e Validação
+O sensor DHT22 realiza a medição da temperatura (em graus Celsius) e da umidade relativa do ar (em porcentagem). Caso ocorra alguma falha física ou de comunicação com o sensor, o sistema exibe "Erro no Sensor!" no LCD e envia uma mensagem JSON de erro via Porta Serial.
+
+### ⚠️ 2. Lógica de Triagem de Riscos
+
+O sistema analisa os dados coletados em tempo real e chaveia automaticamente entre três estados possíveis:
+
+| Nível de Risco | Condição Teórica | Sinalização Visual | Sinalização Sonora |
+| :--- | :--- | :---: | :---: |
+| **Nível 1: OK** | Temperatura < 35°C **e** Umidade ≥ 30% | 🟢 LED Verde ligado | Desativada |
+| **Nível 2: ALERTA** | Temperatura ≥ 35°C **ou** Umidade < 30% | 🟡 LED Amarelo ligado | Desativada |
+| **Nível 3: CRÍTICO** | Temperatura ≥ 40°C **ou** (Temp > 35°C **e** Umidade < 30%) | 🔴 LED Vermelho ligado | 🔊 Buzzer Ativo (1000Hz) |
+
+### 3. Saída de Dados
+As informações de Temperatura ("T") e Umidade ("U") são atualizadas no Display LCD junto com a string correspondente ao Status: [OK / ALERTA / CRITICO].
