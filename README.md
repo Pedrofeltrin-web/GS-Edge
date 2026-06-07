@@ -50,3 +50,14 @@ O sistema analisa os dados coletados em tempo real e chaveia automaticamente ent
 
 ### 3. Saída de Dados
 As informações de Temperatura ("T") e Umidade ("U") são atualizadas no Display LCD junto com a string correspondente ao Status: [OK / ALERTA / CRITICO].
+
+## Estrutura do Circuito (Mapeamento de Pinos)
+O circuito deve ser montado seguindo as conexões elétricas detalhadas abaixo:
+| Componente | Pino do Componente | Conexão no Arduino | Tipo de Sinal | Observação / Proteção |
+| :--- | :--- | :---: | :---: | :--- |
+| **Sensor DHT22** | VCC <br> GND <br> SDA (Dados) | **5V** <br> **GND** <br> **Pino 6** | Alimentação <br> Alimentação <br> Digital (Entrada) | Leitura de Temperatura/Umidade |
+| **Display LCD I2C** | VCC <br> GND <br> SDA <br> SCL | **5V** <br> **GND** <br> **Pino A4** <br> **Pino A5** | Alimentação <br> Alimentação <br> I2C Data <br> I2C Clock | Barramento de Comunicação I2C |
+| 🟢 **LED Verde (OK)** | Anodo (+)<br> Catodo (-) | **Pino 8** <br> **GND** | Digital (Saída) <br> Alimentação | Em série com Resistor 220 Ω <br> Ligado direto ao GND |
+| 🟡 **LED Amarelo (Alerta)** | Anodo (+)<br> Catodo (-) | **Pino 9** <br> **GND** | Digital (Saída) <br> Alimentação | Em série com Resistor 220 Ω <br> Ligado direto ao GND |
+| 🔴 **LED Vermelho (Crítico)** | Anodo (+)<br> Catodo (-) | **Pino 10** <br> **GND** | Digital (Saída) <br> Alimentação | Em série com Resistor 220 Ω <br> Ligado direto ao GND |
+| 🔊 **Buzzer** | Terminal 1 <br> Terminal 2 | **Pino 7** <br> **GND** | Digital (Saída) <br> Alimentação | Alarme sonoro do sistema |
