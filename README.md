@@ -65,6 +65,7 @@ O circuito deve ser montado seguindo as conexões elétricas detalhadas abaixo:
 ## Instruções de Execução
 
 * 🔗 **Link Wokwi:** [Clique aqui para acessar](https://wokwi.com/projects/466193340014837761)
+* 🔗 **Link do Video:** [Clique aqui para acessar](https://youtu.be/1w6ArKm7wh0?si=uXOA2WdW-5qoZCYl)
 
 ### No Hardware Físico
 
